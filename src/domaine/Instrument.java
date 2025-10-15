@@ -13,6 +13,7 @@ import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
@@ -37,7 +38,7 @@ import javax.swing.Timer;
 /**
  *
  */
-public class Instrument implements Receiver {
+public class Instrument implements Receiver, Serializable {
 
     private ArrayList<Touche> listeTouches = new ArrayList<Touche>();
     private String nomInstrument;
